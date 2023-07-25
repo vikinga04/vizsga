@@ -1,0 +1,14 @@
+<h2>Vizsgafeladat megoldása</h2>
+<div class="form-group">
+    <label for="vizsgaltSzam"> Vizsgáldanó szám</label>
+    <input type="number" class="form-control" id="vizsgaltSzam" [(ngModel)]="vizsgaltSzam">
+    <button type="button" class="btn btn-primary form-control" (click)="EredmenyMentes()">Eredmény mentése</button>
+    <p>A(z) {{vizsgaltSzam}} {{EredmenyKiir()}}</p>
+
+    <ul>
+        <li *ngFor="let eredmeny of megoldasok">
+            {{eredmeny}}
+        </li>
+    </ul>
+
+</div>
